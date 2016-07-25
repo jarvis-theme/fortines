@@ -46,7 +46,7 @@ return array(
         }
     ),
     'num_display' => array(
-        'home_product'=>9,
+        'home_product'=>3,
         'main_product'=>9,
         'related_product'=>4,
         'latest_product'=>5,
@@ -60,8 +60,5 @@ return array(
         'type'=> 'false', 
         'warnaDef'=>'background:#FFF;backmenu-background:#F5F5F5;menu-background:#E55137;footer-background:#F3F3F3',
         'color'=>false
-    ),
-    'layout' => array(
-        'index1'=>'Layout dengan sidebar '
-    ),
+    )
 );
