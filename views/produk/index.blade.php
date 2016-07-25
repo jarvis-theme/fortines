@@ -19,7 +19,7 @@
 					@endif
 					@if(count(best_seller()) > 0)
 					<section>
-						<h5>Best Seller</h5>
+						<h5>Produk Terlaris</h5>
 						@foreach (best_seller() as $item)
 						<a href="{{product_url($item)}}">
 							<article class="clearfix">
