@@ -48,7 +48,17 @@
 					<nav class="horizontal-nav full-width">
 						<ul class="nav" id="nav">
 							@foreach(main_menu()->link as $key=>$link)
+							@if($key==0)
+							<li><a href="{{menu_url($link)}}">BERANDA</a></li>
+							@elseif($key==1)
+							<li><a href="{{menu_url($link)}}">PRODUK</a></li>
+							@elseif($key==2)
+							<li><a href="{{menu_url($link)}}">KEGIATAN</a></li>
+							@elseif($key==3)
+							<li><a href="{{menu_url($link)}}">KONTAK KAMI</a></li>
+							@else
 							<li><a href="{{menu_url($link)}}">{{$link->nama}}</a></li>
+							@endif
 							@endforeach
 						</ul>
 					</nav>
