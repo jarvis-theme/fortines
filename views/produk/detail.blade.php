@@ -191,7 +191,7 @@
                 <div class="span12">
                     <div class="cross-wrapper">
                         <hr />
-                        <header>Produk yang mungkin anda suka</header>
+                        <header>Produk lain yang mungkin anda sukai</header>
                         <section class="row-fluid cross-product">
                         @foreach(other_product($produk) as $myproduk)   
                             <article class="span3" id="related-produk">
