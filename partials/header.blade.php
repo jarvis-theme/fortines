@@ -32,7 +32,7 @@
 
 					<div class="cart span4">
 						<form action="{{url('search')}}" class="topsearch" method='post'>
-							<input type="search" class="top-search" placeholder="Search" name="search" required/>
+							<input type="search" class="top-search" placeholder="Cari.." name="search" required/>
 							<button type="submit"><i class="icon-search"></i></button>
 						</form>
 					</div>
