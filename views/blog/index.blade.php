@@ -8,7 +8,7 @@
             <div class="row-fluid">
                 <div class="span4 sidebar">
                     <aside>
-                        <p class="title"><i class="icon-rss"></i> <strong>Artikel Baru</strong></p>
+                        <p class="title"><i class="icon-rss"></i> <strong>Kegiatan Baru</strong></p>
                         <ul>
                             @foreach(list_blog() as $recent)
                             <li><a href="{{blog_url($recent)}}">{{$recent->judul}}</a><br /><small>diposting tanggal {{waktuTgl($recent->created_at)}}</small></li>
@@ -39,7 +39,7 @@
                         {{list_blog(null,@$blog_category)->links()}} 
                     </div>
                 @else   
-                    <article id="result-blog"><i>Blog tidak ditemukan.</i></article>
+                    <article id="result-blog"><i>Tidak ada Aktivitas ditemukan.</i></article>
                 @endif  
                 </div>
             </div>
