@@ -4,7 +4,13 @@
 			@foreach(all_menu() as $key=>$group)
 			@if($key!=0)
 			<article class="span3">
+				@if($key==0)
+				<strong>Menu Cepat</strong>
+				@elseif
+				<strong>Member</strong>
+				@else
 				<strong>{{$group->nama}}</strong>
+				@endif
 				<ul>
 					@foreach($group->link as $key=>$link)
 						<li><a href='{{menu_url($link)}}'>{{$link->nama}}</a></li>
@@ -23,7 +29,7 @@
 				</ul>
 			</article>
 			<article class="span3">
-				<strong>HUBUNGI KAMI</strong>
+				<strong>Hubungi Kami</strong>
 				<!--<div id="mc_embed_signup">
 					<form action="{{@$mailing->action}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form newsletter" class="validate form-inline" target="_blank" novalidate>
 						<input type="email" placeholder="Email anda" name="EMAIL" class="input-medium required email" id="newsletter mce-EMAIL" required {{@$mailing->action==''?'disabled style="cursor:default"':''}}>
