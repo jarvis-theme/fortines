@@ -1,3 +1,14 @@
+<section class="home-panel promo">
+    <div class="container">
+        <div class="row-fluid">
+        
+            <h1>{{ Theme::place('title') }}</h1>
+            <p>{{about_us()->isi}}</p>
+        
+        </div>
+    </div>
+</section>
+
 <div class="container home">
     <section class="feat">
         <div class="row">
