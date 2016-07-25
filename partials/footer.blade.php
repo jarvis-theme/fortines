@@ -15,7 +15,7 @@
 			@endforeach
 
 			<article class="span3">
-				<strong>Posting Terbaru</strong>
+				<strong>Kegiatan Terbaru</strong>
 				<ul>
 					@foreach (list_blog() as $items)
 						<li><a href="{{blog_url($items)}}">{{$items->judul}}</a><br /><small>diposting pada {{waktuTgl($items->created_at)}}</small></li>
@@ -23,13 +23,13 @@
 				</ul>
 			</article>
 			<article class="span3">
-				<strong>Newsletter</strong>
-				<div id="mc_embed_signup">
+				<strong>HUBUNGI KAMI</strong>
+				<!--<div id="mc_embed_signup">
 					<form action="{{@$mailing->action}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form newsletter" class="validate form-inline" target="_blank" novalidate>
 						<input type="email" placeholder="Email anda" name="EMAIL" class="input-medium required email" id="newsletter mce-EMAIL" required {{@$mailing->action==''?'disabled style="cursor:default"':''}}>
 						<button type="submit" class="btn" {{ @$mailing->action==''?'disabled="disabled"':'' }}><i class="icon-direction"></i></button>
 					</form>
-				</div>
+				</div>-->
 				@if($kontak->alamat!='')
 					<address class="row-fluid">
 						<div class="pull-left clabel"><i class="icon-location"></i></div>
