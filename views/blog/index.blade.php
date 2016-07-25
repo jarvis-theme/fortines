@@ -30,6 +30,7 @@
                     <article>
                         <a href="{{blog_url($value)}}"><h4>{{$value->judul}}</h4></a>
                         <p><small class="date"><i class="icon-calendar"></i> {{waktuTgl($value->created_at)}}</small></p>
+                        <p><img style="width:100%;max-height:180px;" src="{{imgString($value->isi)}}" /> </p>
                         {{short_description($value->isi,300)}}
                         <p><a href="{{blog_url($value)}}" class="theme">Baca Selengkapnya →</a></p>
                     </article>
