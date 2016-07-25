@@ -6,7 +6,7 @@
 			<article class="span3">
 				@if($key==0)
 				<strong>Menu Cepat</strong>
-				@elseif
+				@elseif($key==1)
 				<strong>Member</strong>
 				@else
 				<strong>{{$group->nama}}</strong>
