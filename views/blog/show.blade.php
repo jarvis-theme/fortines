@@ -46,7 +46,7 @@
                 </div>
                 <div class="span4 sidebar">
                     <aside>
-                        <p class="title"><i class="icon-rss"></i> <strong>Artikel Terbaru</strong></p>
+                        <p class="title"><i class="icon-rss"></i> <strong>Kegiatan Terbaru</strong></p>
                         <ul>
                             @foreach(list_blog(8) as $recent)
                             <li><a href="{{blog_url($recent)}}">{{$recent->judul}}</a><br /><small>diposting tanggal {{waktu($recent->created_at)}}</small></li>
