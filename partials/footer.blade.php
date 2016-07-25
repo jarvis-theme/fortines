@@ -18,7 +18,7 @@
 				<strong>Kegiatan Terbaru</strong>
 				<ul>
 					@foreach (list_blog() as $items)
-						<li><a href="{{blog_url($items)}}">{{$items->judul}}</a><br /><small>diposting pada {{waktuTgl($items->created_at)}}</small></li>
+						<li><a href="{{blog_url($items)}}">{{$items->judul}}</a><br /><small>ditambah pada {{waktuTgl($items->created_at)}}</small></li>
 					@endforeach
 				</ul>
 			</article>
