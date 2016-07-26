@@ -1,9 +1,9 @@
-Tender
+Fortines
 ------------
 
-![tender](http://s3-ap-southeast-1.amazonaws.com/cdn2.jarvis-store.com/img/themes/tender/tender-preview.jpg)
+![fortines](http://s3-ap-southeast-1.amazonaws.com/cdn2.jarvis-store.com/img/themes/fortines/fortines-preview.jpg)
 
-Tender adalah template toko online yang berdesain simple dan minimalis, dilengkapi slider promo pada halaman utama untuk mempromosikan produk anda.
+Fortines adalah template toko online yang berdesain simple dan minimalis, dilengkapi slider promo pada halaman utama untuk mempromosikan produk anda.
 
 **Fitur:**
  - Full responsive 

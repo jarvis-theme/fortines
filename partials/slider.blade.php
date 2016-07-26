@@ -6,6 +6,7 @@
 					@foreach(slideshow() as $slider)
 					<li>
 						<img src="{{url(slide_image_url($slider->gambar))}}" alt="Slide Promo" />
+						@if(!empty($slider->title) || !empty($slider->text) || !empty($slider->url))
 						<p class="flex-caption">
 							@if(!empty($slider->title))
 							<strong>{{$slider->title}}</strong><br />
@@ -17,6 +18,7 @@
 							<a href="{{filter_link_url($slider->url)}}" class="btn theme">Lihat</a>
 							@endif
 						</p>
+						@endif
 
 						<!--  <p class="flex-caption">
 						  <strong>CAPTION</strong><br />
