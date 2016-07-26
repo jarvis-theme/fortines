@@ -123,6 +123,13 @@
 					@if($kontak->ig)
 						<li><a target="_blank" href="{{url($kontak->ig)}}" title="Instagram"><i class="icon-instagrem"></i></a></li>
 					@endif
+					@if($kontak->picmix)
+						<li>
+							<a target="_blank" href="{{url($kontak->picmix)}}" title="Picmix">
+								<img class="picmix" src="https://s3-ap-southeast-1.amazonaws.com/cdn2.jarvis-store.com/blogs/event/icon-picmix.png" style="height: 25px; margin-top: -5px">
+							</a>
+						</li>
+					@endif 
 				</ul>
 			</div>
 		</div>
