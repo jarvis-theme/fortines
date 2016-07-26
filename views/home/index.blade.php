@@ -1,5 +1,5 @@
 <section class="home-panel promo">
-    <div class="container">
+    <div class="containers">
         <div class="row-fluid">
         
             <h1>{{ Theme::place('title') }}</h1>
